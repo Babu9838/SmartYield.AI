@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SmartYield.AI - Dashboard</title>
+    <style>
+        /* Base Colors & Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #0B132B; /* Dark Deep Navy Background */
+            color: #FFFFFF;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* Top Navigation Bar */
+        header {
+            background-color: #1C2541; /* Slightly lighter dark for contrast */
+            padding: 15px 30px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border-bottom: 1px solid #3A506B;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Logo and Title Container */
+        .brand-container {
+            display: flex;
+            align-items: center;
+            gap: 15px; /* Space between logo and text */
+        }
+
+        /* Crisp Logo Styling */
+        .app-logo {
+            height: 45px; /* Perfect sizing to avoid blurring */
+            width: auto;
+            object-fit: contain;
+            image-rendering: -webkit-optimize-contrast; /* Enhances sharpness */
+            image-rendering: crisp-edges;
+            border-radius: 8px; /* Optional rounded edges */
+        }
+
+        .app-title {
+            font-size: 24px;
+            font-weight: 700;
+            letter-spacing: 0.5px;
+            background: linear-gradient(45deg, #00EBFF, #00B4D8); /* AI Vibrant Gradient */
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        /* Navigation Links */
+        .nav-links {
+            display: flex;
+            gap: 20px;
+            list-style: none;
+        }
+
+        .nav-links a {
+            color: #8D99AE;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover, .nav-links a.active {
+            color: #00EBFF;
+        }
+
+        /* Main Dashboard Content Wrapper */
+        .dashboard-container {
+            padding: 40px 30px;
+            max-width: 1200px;
+            width: 100%;
+            margin: 0 auto;
+            flex: 1;
+        }
+
+        .welcome-section {
+            margin-bottom: 30px;
+        }
+
+        .welcome-section h1 {
+            font-size: 28px;
+            margin-bottom: 10px;
+        }
+
+        .welcome-section p {
+            color: #8D99AE;
+        }
+
+        /* Placeholder Cards for USDC & AI Stats */
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .card {
+            background-color: #1C2541;
+            padding: 25px;
+            border-radius: 12px;
+            border: 1px solid #3A506B;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s, border-color 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            border-color: #00EBFF;
+        }
+
+        .card h3 {
+            color: #8D99AE;
+            font-size: 14px;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+            letter-spacing: 1px;
+        }
+
+        .card .value {
+            font-size: 32px;
+            font-weight: 700;
+            color: #00EBFF;
+        }
+
+        .card .subtext {
+            font-size: 12px;
+            color: #00F5D4;
+            margin-top: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="brand-container">
+            <img src="1000227687.jpg" alt="SmartYield.AI Logo" class="app-logo">
+            <span class="app-title">SmartYield.AI</span>
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#" class="active">Dashboard</a></li>
+                <li><a href="#">AI Agent</a></li>
+                <li><a href="#">USDC Vaults</a></li>
+                <li><a href="#">Transactions</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="dashboard-container">
+        <section class="welcome-section">
+            <h1>Welcome to Arc Network Agentic Portal</h1>
+            <p>Optimize your stablecoin yield using automated AI strategies.</p>
+        </section>
+
+        <div class="stats-grid">
+            <div class="card">
+                <h3>Total USDC Balance</h3>
+                <div class="value">$10,450.00</div>
+                <div class="subtext">Unified Balance Active</div>
+            </div>
+            <div class="card">
+                <h3>AI Strategy APY</h3>
+                <div class="value">12.4%</div>
+                <div class="subtext">Optimized by SmartYield.AI</div>
+            </div>
+            <div class="card">
+                <h3>Active Autonomous Agents</h3>
+                <div class="value">2</div>
+                <div class="subtext">Monitoring Arc Network</div>
+            </div>
+        </div>
+    </main>
+
+</body>
+</html>
